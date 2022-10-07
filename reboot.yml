@@ -4,4 +4,4 @@
   hosts: "{{ machine }}"
   tasks: 
     win_reboot:
-    msg: Reboot initiated by Ansible
+    msg: "Reboot initiated by Ansible"
