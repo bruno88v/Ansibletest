@@ -5,4 +5,4 @@
   gather_facts: false
   tasks:
   - name: rebootvm
-    win_reboot: reboot
+    win_reboot:
