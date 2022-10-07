@@ -4,5 +4,5 @@
   hosts: "{{ machine }}"
   gather_facts: false
   tasks:
-  - name: reboot_vm 
-  win_reboot:
+  - name: rebootvm
+    win_reboot: reboot
