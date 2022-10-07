@@ -1,9 +1,8 @@
 ---
 
 - name: Restart VM
-  hosts: "{{ servers }}"
-  tasks:
-  - name: Restart VM 
+  hosts: "{{ machine }}"
+  tasks: 
     win_reboot:
     name: WIN-2ROIQQQETAI
     msg: "Reboot initiated by Ansible"
