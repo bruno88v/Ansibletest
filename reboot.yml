@@ -3,4 +3,4 @@
 - name: Reboot the machine with all defaults
   hosts: "{{ machine }}"
   win_reboot:
-  msg: "Reboot initiated by Ansible"
+  msg: Reboot initiated by Ansible
