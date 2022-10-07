@@ -1,7 +1,6 @@
 ---
 
-- name: Restart_VM
+- name: Reboot the machine with all defaults
   hosts: "{{ machine }}"
-  tasks: 
-    win_reboot:
-    msg: "Reboot initiated by Ansible"
+  win_reboot:
+  msg: "Reboot initiated by Ansible"
