@@ -2,5 +2,7 @@
 
 - name: Reboot the machine with all defaults
   hosts: "{{ machine }}"
+  gather_facts: false
+  tasks:
+  - name: reboot_vm 
   win_reboot:
-  msg: Reboot initiated by Ansible
