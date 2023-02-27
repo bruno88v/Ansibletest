@@ -1,8 +1,9 @@
 ---
 
-- name: testsite
+- name: task stop testsite
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
     win_iis_webapppool:
+    name: testsite
     state: stopped
