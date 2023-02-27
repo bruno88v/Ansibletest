@@ -1,6 +1,6 @@
 ---
 
-- name: task stop testsite
+- name: task
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
