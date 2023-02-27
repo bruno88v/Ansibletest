@@ -4,7 +4,7 @@
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
-  - name: Stop testsite
     - win_shell: C:\stop.ps1 >> C:\stop.txt
+      name: testsite
       args:
-      chdir: C:\
+        chdir: C:\
