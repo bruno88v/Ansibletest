@@ -4,7 +4,7 @@
   hosts: "{{ servers }}"
   gather_facts: false
   tasks:
-  - name: Stop webhook
+  - name: Stop testsite
     win_iis_webapppool:
-      name: webhook
+      name: testsite
       state: stopped
